@@ -12,6 +12,7 @@ use crate::entity::Book;
 mod entity;
 mod service;
 mod repository;
+mod integration_tests;
 
 pub struct AppState {
     books: Mutex<Vec<Book>>,
@@ -71,6 +72,3 @@ fn build_cors() -> Cors {
         ])
         .supports_credentials()
 }
-
-
-
